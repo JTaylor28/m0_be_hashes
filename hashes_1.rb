@@ -1,5 +1,5 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,51 +7,74 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+p foods
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
 
+p foods.keys 
+
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
 
+p foods[:grapes]
+
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
 
+foods[:pizza] = 8
+
+p foods
 
 #-------------------
 # Part 2: Email
 #-------------------
 
 
-# Think about all the pieces of information associated with one single email in your inbox.
-# It has a sender, a subject, ...
+# # Think about all the pieces of information associated with one single email in your inbox.
+# # It has a sender, a subject, 
 
-# Declare a variable that stores hash. Each key should be an attribute of an email and each
-# value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+# # Declare a variable that stores hash. Each key should be an attribute of an email and each
+# # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-# Write code that prints your email hash to the terminal.
+email ={
+  sender: "jr@whatever.needssleep",
+  subject: "You up?",
+  cc: "turing@Turing.com",
+  body: "I am soooooo tired right now",
+  time_stamp: "10:55pmMS"
 
-
-# Write code that prints all of the 'keys' of the email hash 
-# you created above:
-# YOUR CODE HERE
-
-# Write code that prints all of the 'values' of the email hash 
-# you created above:
-# YOUR CODE HERE
+}
 
 
-#-------------------
-# Part 3: Many Emails - CHALLENGE!
-#-------------------
+# # Write code that prints your email hash to the terminal.
+
+p email
+
+# # Write code that prints all of the 'keys' of the email hash 
+# # you created above:
+# # YOUR CODE HERE
+
+p email.keys
+
+# # Write code that prints all of the 'values' of the email hash 
+# # you created above:
+# # YOUR CODE HERE
+
+p email.values
+
+# #-------------------
+# # Part 3: Many Emails - CHALLENGE!
+# #-------------------
 
 # LONG EXAMPLE:
 # Now that we've learned about Hashes AND Arrays, we can combine them.
@@ -86,6 +109,7 @@ posts = [
 
 p posts
 p posts[0]
+p posts[1]
 
 
 # The code snippet above shows an Array with 2 elements. Each element in the Array is a 
@@ -97,3 +121,30 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+
+emails = [
+  {
+  sender: "jr@whatever.needssleep",
+  subject: "You up?",
+  cc: "turing@Turing.com",
+  body: "I am soooooo tired right now",
+  time_stamp: "10:55pmMS"
+  },
+  {
+  sender: "jr@whatever.needssleep",
+  subject: "You up?",
+  cc: "turing@Turing.com",
+  body: "I am soooooo tired right now",
+  time_stamp: "10:55pmMS"
+  },
+  {
+  sender: "jr@whatever.needssleep",
+  subject: "You up?",
+  cc: "turing@Turing.com",
+  body: "I am soooooo tired right now",
+  time_stamp: "10:55pmMS"
+  }
+]
+
+p emails 
